@@ -50,3 +50,11 @@ console.log(add(10, -5))   //returns 5
 console.log(add(3, 7.5))   //returns 10.5
 console.log(add(5, 5))     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
 console.log(add(6, 6))     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that
+
+// 7. Write a function isNegative that takes in a number parameter and returns true is the number is a negative value and false is the number is a positive value.
+const isNegative = (num) => {
+    return num < 0;
+}
+console.log(isNegative(3))         //returns false
+console.log(isNegative(-2))        //returns true
+console.log(isNegative(Math.PI))   //returns false
