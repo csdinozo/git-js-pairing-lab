@@ -75,3 +75,17 @@ console.log(betweenTwentyAndFourty(20))     //return false
 console.log(betweenTwentyAndFourty(21))     //return true
 console.log(betweenTwentyAndFourty(39))     //return true
 console.log(betweenTwentyAndFourty(40))     //return false
+
+// 10. Write a function largest that takes in three number parameters and returns the largest of the values.
+
+const largest = (num1, num2, num3) => {
+    if (num1 >= num2 & num1 >= num3)
+        return num1; 
+        else if (num2 >= num3) 
+        return num2;
+    return num3; 
+}
+
+console.log(largest(4, 6, 8))        //returns 8
+console.log(largest(30, 22, 17))     //returns 30
+console.log(largest(41, 108, 86))    //returns 108
