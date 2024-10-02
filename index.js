@@ -66,3 +66,12 @@ const triangleArea = (height,base) => {
 }
 console.log(triangleArea(5, 7))    //returns 17.5
 console.log(triangleArea(6, 8))    //returns 24
+
+// 9. Write a function betweenTwentyAndFourty that takes in a number parameter and checks whether a given integer is within 20 to 40. It returns true if it is and false if not.
+const betweenTwentyAndFourty = (num) => {
+    return num > 20 && num < 40;
+}
+console.log(betweenTwentyAndFourty(20))     //return false
+console.log(betweenTwentyAndFourty(21))     //return true
+console.log(betweenTwentyAndFourty(39))     //return true
+console.log(betweenTwentyAndFourty(40))     //return false
