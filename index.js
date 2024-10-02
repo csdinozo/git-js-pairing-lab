@@ -26,3 +26,10 @@ const untilNum = (num) => {
 untilNum(5);
 untilNum(9);
 untilNum(42);
+
+const multiply = (numOne, numTwo) => {
+    return numOne * numTwo;
+}
+console.log(multiply(2, 4))     //returns 8
+console.log(multiply(10, -5))   //returns -50
+console.log(multiply(3, 7.5))   //returns 22.5
