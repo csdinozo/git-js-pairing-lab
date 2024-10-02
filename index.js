@@ -1,17 +1,20 @@
 //Code your solutions in this file
 
+// 1. Write a function fiveToOneHundred that console logs all numbers from 5 to 100.
 const fiveToOneHundred = () => {
     for (let i = 5; i <=100; i++) { console.log(i); }
 }
 
 fiveToOneHundred();
 
+// 2. Write a function multiplesOfThree that console logs all positive numbers to 100 that is a multiple of 3.
 const multiplesOfThree = () => {
     for ( let i = 3; i <=100; i++)
         if (i % 3 === 0) {console.log(i)}
 }
 multiplesOfThree();
 
+// 3. Write a function multiplesOfThreeOrFive that console logs all positive numbers to 100 if that number is either a mulitple of 3 or a mutliple of 5.
 const multiplesOfThreeOrFive = () => {
     for (let i = 0; i <= 100; i++) {
         if (i % 3 === 0 || i % 5 === 0) console.log(i);
@@ -19,6 +22,7 @@ const multiplesOfThreeOrFive = () => {
 }
 multiplesOfThreeOrFive();
 
+// 4. Write a function untilNum that takes in an integer parameter and console logs all numbers from 1 to that number.
 const untilNum = (num) => {
     for (let i = 1; i <= num; i++)
     console.log(i)    
@@ -27,9 +31,22 @@ untilNum(5);
 untilNum(9);
 untilNum(42);
 
+// 5. Write a function multiply that takes in two number parameters and returns their product.
 const multiply = (numOne, numTwo) => {
     return numOne * numTwo;
 }
 console.log(multiply(2, 4))     //returns 8
 console.log(multiply(10, -5))   //returns -50
 console.log(multiply(3, 7.5))   //returns 22.5
+
+// 6. Write a function add that takes in two number parameters and returns their sum. But if the two values are the same, return triple their sum!
+const add = (numOne, numTwo) => {
+    if (numOne === numTwo)
+        return (numOne + numTwo)*3
+    return numOne + numTwo;
+}
+console.log(add(2, 4))     //returns 6
+console.log(add(10, -5))   //returns 5
+console.log(add(3, 7.5))   //returns 10.5
+console.log(add(5, 5))     //returns 30 because the sum of 5 + 5 = 10 and 30 is triple that
+console.log(add(6, 6))     //returns 36 because the sum of 6 + 6 = 12 and 36 is triple that
