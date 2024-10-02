@@ -18,3 +18,11 @@ const multiplesOfThreeOrFive = () => {
     }
 }
 multiplesOfThreeOrFive();
+
+const untilNum = (num) => {
+    for (let i = 1; i <= num; i++)
+    console.log(i)    
+}
+untilNum(5);
+untilNum(9);
+untilNum(42);
